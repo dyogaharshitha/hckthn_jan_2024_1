@@ -1,1 +1,13 @@
 API uses wsgi production server with default settings
+
+Instructions:
+- crate virtual environment --- for linux or use existing myvnv --- build on windows
+- activate venv
+- install requirements with pip install requirements.txt
+- ensure wsgi server present in the computer
+- build and run app 
+  -- from command line 
+        gunicorn --bind 0.0.0.0:5000 wsgi:app
+       ## adress and port are not configured leaving to default
+  -- from docker image with endpoint configured to 
+      ## same as above
