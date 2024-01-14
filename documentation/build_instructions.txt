@@ -1,0 +1,1 @@
+API uses wsgi production server with default settings
